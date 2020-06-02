@@ -6,6 +6,8 @@
 Welcome to mesh_part_prep's documentation!
 ==========================================
 
+.. include:: ../README.rst
+
 Contents:
 
 .. toctree::
