@@ -12,7 +12,7 @@ From the command line::
 
     $ mesh_part_prep <PATH_TO_MESH_FOLDER>
 
-From an ``esm_tools`` script (as a plugin, which you can include in your recipe as ``mesh_part_prep``):
+From an ``esm_tools`` script (as a plugin, which you can include in your recipe as ``esm_mesh_part_prep``):
 
 .. code-block:: yaml
 
