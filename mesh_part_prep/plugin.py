@@ -34,7 +34,7 @@ In your recipe, you can include the following elements after the installation:
                     - "mesh_part_finish"
 
 
-You configuration should include the following to configure the plugin correctly:
+You configuration should include the following to set up the plugin correctly:
 
 .. code-block:: yaml
 
