@@ -2,6 +2,12 @@
 Preperation Plugin for FESOM Mesh Partitioning
 ==============================================
 
+.. image:: https://readthedocs.org/projects/mesh-part-prep/badge/?version=latest
+:target: https://mesh-part-prep.readthedocs.io/en/latest/?badge=latest
+:alt: Documentation Status
+
+.. image:: https://img.shields.io/github/license/pgierz/mesh_part_prep   :alt: GitHub
+
 This plugin contains functionality to prepare files for the mesh partioner
 after the Triangle program has run.
 
