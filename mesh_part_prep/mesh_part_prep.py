@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 """
-This module allows you to prepare a Triangle output for use with the mesh partitioner.
+The Python module allows you to prepare a Triangle output for use with the mesh partitioner.
 
-Usage
-~~~~~
-You may try the following::
+A minimal example::
 
     >>> from mesh_part_prep import RawMesh
     >>> path = "/some/path/with/a/triangle/output"

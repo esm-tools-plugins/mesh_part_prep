@@ -3,18 +3,29 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+Quickstart
+==========
+
 .. include:: ../README.rst
 
-Contents:
+Command Line Interface
+======================
+
+.. automodule:: mesh_part_prep.cli
+
+ESM Tools Plugin
+================
+
+.. automodule:: mesh_part_prep.plugin
+
+Python Library Usage
+====================
 
 .. automodule:: mesh_part_prep.mesh_part_prep
 
 .. toctree::
    :maxdepth: 2
-
-    modules
-
-
+    mesh_part_prep
 
 Indices and tables
 ==================
@@ -22,4 +33,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

@@ -1,4 +1,53 @@
-"""A esm-tools plugin to prepare files for the FESOM Mesh Generator"""
+"""
+There is also a esm-tools plugin to prepare files for the FESOM Mesh Generator.
+
+This consists of two parts, first to prepare the ``aux3d.out`` file, and
+secondly to move the resulting mesh files into a common directory.
+
+In your recipe, you can include the following elements after the installation:
+
+.. code-block:: yaml
+    :linenos:
+    :emphasize-lines: 3,22
+
+    compute:
+            recipe:
+                    - "mesh_part_prep"
+                    - "_create_setup_folders"
+                    - "_create_component_folders"
+                    - "initialize_experiment_logfile"
+                    - "_write_finalized_config"
+                    - "copy_tools_to_thisrun"
+                    - "_copy_preliminary_files_from_experiment_to_thisrun"
+                    - "_show_simulation_info"
+                    - "copy_files_to_thisrun"
+                    - "modify_namelists"
+                    - "modify_files"
+                    - "create_new_files"
+                    - "prepare_coupler_files"
+                    - "add_batch_hostfile"
+                    - "copy_files_to_work"
+                    - "write_simple_runscript"
+                    - "report_missing_files"
+                    - "database_entry"
+                    - "submit"
+                    - "mesh_part_finish"
+
+
+You configuration should include the following to configure the plugin correctly:
+
+.. code-block:: yaml
+
+    general:
+        mesh_part_prep: True
+        mesh_part_finish: True
+    
+    fesom_mesh_part:
+        mesh_dir: /path/to/your/Triangle/output/dir 
+        result_mesh_dir: /some/path
+        part: 288 # For example, you could set a different partitioning here
+
+"""
 
 import errno
 import os
@@ -76,7 +125,7 @@ def esm_mesh_part_finish(config):
     """
     Finishes up a mesh by copying the paritioned mesh into a folder
     """
-    if config.get("general", {}).get("mesh_part_finish", True):
+    if config.get("general", {}).get("mesh_part_finish", False):
         result_mesh_dir = config["fesom_mesh_part"]["result_mesh_dir"]
         work_dir = config["fesom_mesh_part"]["thisrun_work_dir"]
         part = str(config["fesom_mesh_part"].get("part", 288))
