@@ -17,6 +17,14 @@ mesh_part_prep Package
     :undoc-members:
     :show-inheritance:
 
+:mod:`plugin` Module
+----------------------------
+
+.. automodule:: mesh_part_prep.plugin
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 :mod:`mesh_part_prep` Module
 ----------------------------
 
