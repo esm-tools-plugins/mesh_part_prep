@@ -12,6 +12,14 @@ Preperation Plugin for FESOM Mesh Partitioning
 This plugin contains functionality to prepare files for the mesh partioner
 after the Triangle program has run.
 
+Installation
+------------
+
+To install the plugin, use::
+
+    pip install --user git+https://github.com/esm-tools-plugins/mesh_part_prep
+
+
 Usage
 -----
 
