@@ -7,6 +7,8 @@
 
 Contents:
 
+.. automodule:: mesh_part_prep.mesh_part_prep
+
 .. toctree::
    :maxdepth: 2
 

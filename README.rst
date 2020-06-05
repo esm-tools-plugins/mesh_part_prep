@@ -6,7 +6,7 @@ Preperation Plugin for FESOM Mesh Partitioning
     :target: https://mesh-part-prep.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
-.. image:: https://img.shields.io/github/license/pgierz/mesh_part_prep   
+.. image:: https://img.shields.io/github/license/esm-tools-plugins/mesh_part_prep   
     :alt: GitHub
 
 This plugin contains functionality to prepare files for the mesh partioner
