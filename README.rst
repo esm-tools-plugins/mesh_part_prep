@@ -12,14 +12,18 @@ From the command line::
 
     $ mesh_part_prep <PATH_TO_MESH_FOLDER>
 
-From an ``esm_tools`` script (as a plugin, which you can include in your recipe as ``esm_mesh_part_prep``):
+From an ``esm_tools`` script (as a plugin, which you can include in your recipe as ``mesh_part_prep`` and ``mesh_part_finish``):
 
 .. code-block:: yaml
 
     general:
         # Turn on the plugin (seperate from actually loading it):
         mesh_part_prep: True
+        # Turn on copying the mesh to a desired location after completion
+        mesh_part_finish: True
 
-    fesom:
+    fesom_mesh_part:
         # Specify the raw mesh directory:
         mesh_dir: /some/path/to/mesh/dir
+        # Where the finished, paritioned mesh should be placed:
+        result_mesh_dir: /some/path/where/the/finished/mesh/should/be
